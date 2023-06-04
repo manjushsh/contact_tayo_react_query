@@ -1,0 +1,12 @@
+.no-contact-container{
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.no-contact-icon{
+    font-size: 5rem;
+}
+
+.no-contact-text{
+    font-size: 2rem;
+}

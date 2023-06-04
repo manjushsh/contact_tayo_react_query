@@ -1,0 +1,7 @@
+.toast-body {
+    color: white !important;
+}
+
+.toast-header{
+    text-transform: capitalize;
+}

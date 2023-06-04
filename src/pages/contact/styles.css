@@ -1,0 +1,20 @@
+.add-contact-btn {
+    margin: 5rem auto;
+    width: 100%;
+}
+
+.contact-status-radio {
+    text-transform: capitalize;
+}
+
+.cards-container{
+    margin: auto 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tayo-btn-grp{
+    display: flex;
+    flex-direction: column;
+}

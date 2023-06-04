@@ -1,0 +1,14 @@
+#chartdiv_allglobalcases {
+    /* width: 100%;
+    height: 500px; */
+    font-size: 11px;
+}
+
+.global-cases{
+    margin: 1rem .5rem;
+}
+
+.footer-info{
+    margin: 1rem;
+    font-weight: bold;
+}

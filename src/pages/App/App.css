@@ -2,14 +2,18 @@
   /* width: 100%; */
   height: 100%;
   display: flex;
-  margin-left: .25rem;
+  /* margin-right: 1rem; */
+}
+
+.sidebar-container-fl {
+  flex-direction: column;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.sidebar-container{
+.sidebar-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -21,11 +25,16 @@
   .App {
     flex-direction: column;
   }
-  .sidebar-container{
+
+  .sidebar-container {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1rem;
     align-items: flex-start;
     margin-top: 1rem;
+  }
+
+  .sidebar-container-fl {
+    flex-direction: row;
   }
 }

@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
 import QueryService from "../../services/query-service"
 import LoadingScreen from "../../components/loader";
 import AllCasesGlobal from "./allCasesChart";
@@ -13,6 +14,14 @@ export default function ChartsAndMapMain() {
 
 
     return <div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <a
+                href="https://github.com/manjushsh/contact_tayo_react_query"
+                rel="noreferrer"
+                target="_blank">Open in GitHub
+            </a>
+        </div>
+
         {allCovidDataResponse?.isLoading && <LoadingScreen centered />}
         {allCovidDataResponse?.isError && <h2>Something went wrong while fetching global cases data.</h2>}
         {allCovidDataResponse?.data && <div className="global-cases">

@@ -22,7 +22,8 @@ const routes = [
     path: "/charts-maps",
     content: () => <ChartsAndMapMain />,
     navbar: () => <h5>Charts & Maps</h5>
-  },
+  }
+  // <div><a href={"https://github.com/manjushsh/contact_tayo_react_query"} >Code on GitHub</a></div>
 ];
 
 // Basic router file
@@ -36,7 +37,6 @@ export default function App() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href={routes[1].path}>Charts & Maps</Nav.Link>
-              <Nav.Link href="https://github.com/manjushsh/contact_tayo_react_query">Code hosted on GitHub<Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -25,6 +25,14 @@ export default function Contacts() {
             onClick={() => setIsOpen(!isOpen)}
         >Add New Contact</Button>
 
+        {!contacts?.length && <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <a
+                href="https://github.com/manjushsh/contact_tayo_react_query"
+                rel="noreferrer"
+                target="_blank">Open in GitHub
+            </a>
+        </div>}
+
         {/* Only if contact present  */}
         <div className="cards-container">
             {contacts?.length ? contacts.map(contact => (<TayoCard

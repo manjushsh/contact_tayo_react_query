@@ -25,6 +25,7 @@ export default function Contacts() {
             onClick={() => setIsOpen(!isOpen)}
         >Add New Contact</Button>
 
+        {/* Only if contact present  */}
         <div className="cards-container">
             {contacts?.length ? contacts.map(contact => (<TayoCard
                 key={`${contact?.firstName}-${contact?.firstName}`}

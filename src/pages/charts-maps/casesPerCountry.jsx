@@ -6,7 +6,7 @@ const { am5, am5map, am5themes_Animated, am5geodata_worldLow } = window
 export default function AllCasesGlobal(props) {
     const seriesByCountryRef = useRef(null);
 
-    // This code will only run one time
+    // This code will only run one time and after all DOM mutations
     useLayoutEffect(() => {
         let root = am5.Root.new("chartdiv_country_wise_cases");
         root.setThemes([am5themes_Animated.new(root)]);
@@ -44,6 +44,7 @@ export default function AllCasesGlobal(props) {
 
     useLayoutEffect(() => {
 
+        // Update data for Map as soon as we get new data.
         const formatedData = [];
         (props?.casesData || []).forEach(country => {
             formatedData.push({
@@ -59,7 +60,7 @@ export default function AllCasesGlobal(props) {
 
     return <>
     <div id="chartdiv_country_wise_cases" style={{ minWidth: "75vw", minHeight: "80vh" }}></div>
-    <footer className="footer-info">* In mobile, click on a country to ciew its data.</footer>
+    <footer className="footer-info">* In mobile, click on a country to view its data.</footer>
     </>;
 }
 

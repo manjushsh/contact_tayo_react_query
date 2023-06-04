@@ -6,6 +6,7 @@ import CovidCasesByCountryMap from "./casesPerCountry";
 
 export default function ChartsAndMapMain() {
 
+    // Query to fetch covid data from API
     const { getAllCovid19Cases, getCovid19CasesByCountry } = QueryService
     const allCovidDataResponse = useQuery({ queryKey: ['allCovidCasesGlobally'], queryFn: getAllCovid19Cases })
     const covidDataByCountryResponse = useQuery({ queryKey: ['covidCasesByCountry'], queryFn: getCovid19CasesByCountry })

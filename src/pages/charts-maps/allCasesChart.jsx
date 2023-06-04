@@ -38,6 +38,7 @@ export default function AllCasesGlobal(props) {
             })
         );
 
+        // Customize chart. Refer Amchart 5 docs for more info
         let scrollbar = am5.Scrollbar.new(root, {
             orientation: "horizontal"
         });
@@ -86,7 +87,7 @@ export default function AllCasesGlobal(props) {
         };
     }, []);
 
-    // This code will only run when props.data changes
+    // This code will only run when props.chartData changes
     useLayoutEffect(() => {
 
         const formatedData = [];

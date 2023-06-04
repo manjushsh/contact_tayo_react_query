@@ -21,14 +21,15 @@ const routes = [
   },
 ];
 
+// Basic router file
 export default function App() {
   return (
     <section className="App">
       <aside className="sidebar-container">
-        {routes?.map(route => <Link className="sidebar-element" to={route.path}>{<route.navbar />}</Link>)}
+        {routes?.map((route, key) => <Link key={key} className="sidebar-element" to={route.path}>{<route.navbar />}</Link>)}
       </aside>
       <Routes>
-        {routes?.map(route => <Route path={route.path} element={<route.content />} />)}
+        {routes?.map((route, key) => <Route key={key} path={route.path} element={<route.content />} />)}
       </Routes>
     </section>
   );

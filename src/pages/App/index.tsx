@@ -36,6 +36,7 @@ export default function App() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href={routes[1].path}>Charts & Maps</Nav.Link>
+              <Nav.Link href="https://github.com/manjushsh/contact_tayo_react_query/tree/master">Code hosted on GitHub<Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
